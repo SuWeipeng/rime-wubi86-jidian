@@ -1,4 +1,4 @@
-![rime_all](https://user-images.githubusercontent.com/12215982/128606213-b418558c-ff2e-4368-9fb3-f078ad3d3cde.png)
+![rime_all](https://user-images.githubusercontent.com/12215982/139872549-0b3f1195-188d-483d-ab66-4de9d3f48a73.png)
 
 该库是 Rime 输入法的一个 86 版极点五笔的输入方案，支持多平台（Windows macOS Linux）
 并配有词条管理工具 [五笔词条工具](https://github.com/KyleBing/wubi-dict-editor)
@@ -36,12 +36,7 @@ patch:
     color_scheme: WhiteAqua  # 匹配正文的颜色方案，对应正文的颜色方案名
 ```
 
-<img width="400" alt="windows-skin" src="https://user-images.githubusercontent.com/12215982/127078734-41584c0f-96b8-4630-8cd4-3522d9ce384e.jpg">
-
-<img width="400" alt="windows-skin" src="https://user-images.githubusercontent.com/12215982/127078737-9b6fb1c9-3b32-42e9-970f-baeb68c024b0.jpg">
-
-<img width="400" alt="windows-skin" src="https://user-images.githubusercontent.com/12215982/127078741-c4eb7b20-2199-4eea-a6da-491ff620a695.jpg">
-
+<img width="485" src="https://user-images.githubusercontent.com/12215982/139873356-1a0c91a9-7343-4dd8-910b-c8f2f7003365.png">
 
 __Linux: Ubuntu__
 
@@ -59,13 +54,12 @@ __Linux: Ubuntu__
 ├── squirrel.custom.yaml                    # 配置文件 - 鼠须管（for macOS）输入法候选词界面
 ├── weasel.custom.yaml                      # 配置文件 - 小狼毫（for Windows）输入法候选词界面
 ├── numbers.schema.yaml                     # 输入方案 - 大写数字
-├── wubi86_jidian.schema.yaml               # 输入方案 - 极点五笔
+├── pinyin_simp.dict.yaml                   # 词库文件 - 简体拼音码表 - 五笔中拼音输入需要的
 ├── pinyin_simp.schema.yaml                 # 输入方案 - 简体拼音
 ├── wubi86_jidian_pinyin.schema.yaml        # 输入方案 - 五笔拼音混输
-├── wubi86_jidian_trad.schema.yaml          # 输入方案 - 五笔简入繁出
-├── pinyin_simp.dict.yaml                   # 词库文件 - 简体拼音码表 - 五笔中拼音输入需要的
+├── wubi86_jidian.schema.yaml               # 输入方案 - 极点五笔
 ├── wubi86_jidian.dict.yaml                 # 词库文件 - 极点五笔主码表
-├── wubi86_jidian_addition.dict.yaml        # 词库文件 - 旧版 WubiBuddy 用户词添加工具主操作文件
+├── wubi86_jidian_trad.schema.yaml          # 输入方案 - 五笔简入繁出
 ├── wubi86_jidian_user.dict.yaml            # 词库文件 - 用户私人词库
 └── wubi86_jidian_extra.dict.yaml           # 词库文件 - 扩展词库
 ```
@@ -79,7 +73,7 @@ __Linux: Ubuntu__
 2. macOS 上的 鼠须管 配置文件存放目录是 `~/Library/Rime`，把下载后的`rime-wubi86-jidian`内的所有文件移到 `Rime` 目录中，
 3. 点击状态栏上的输入法图标，下拉菜单中选择 <kbd>部署</kbd> (英文是<kbd>Deploy</kbd>），或者可以直接使用快捷键 <kbd>control</kbd> + <kbd>option</kbd> + <kbd>~</kbd>
 
-**注意：** `Rime` 目录下的 `Build` 目录是程序生成的，不要把配置文件放在那里面，无视它即可。
+> **注意：** `Rime` 目录下的 `Build` 目录是程序生成的，不要把配置文件放在那里面，无视它即可。
 
 放的时候目录结构是这样的：
 ```bash
@@ -208,7 +202,7 @@ ubuntu 的配置文件目录在 `~/.config/ibus/rime/`
 
 <img width="463" alt="auto-create-words" src="https://user-images.githubusercontent.com/12215982/114480534-4b922200-9c35-11eb-8d08-4c8eacb407a2.png">
 
-__注意__: 这样会关闭自动上屏，顶字上屏的功能。
+> **注意**: 这样会关闭自动上屏，顶字上屏的功能。
 
 需要修改 `wubi86_jidian.schema.yaml` 下面几个内容
 
